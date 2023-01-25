@@ -1,24 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To-Do List</title>
+    <title>Formulário</title>
     <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-    <h1>To-Do List</h1>
-    <div id="input-area">
-        <input type="text" id="task-input" placeholder="New task...">
-        <button id="add-button">Add</button>
-    </div>
-    <ul id="task-list">
-        <li>Task 1</li>
-    </ul>
+
+    <form id="form">
+        <label for="fullname">Nome completo:</label>
+        <input type="text" id="fullname" name="fullname" required>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="number">Telefone:</label>
+        <input type="tel" id="number" name="number" required>
+        <br>
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" name="cpf" required>
+        <br>
+        <label for="address">Endereço completo:</label>
+        <input type="text" id="address" name="address" required>
+        <br>
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.min.js"></script>
     <script src="main.js"></script>
+
 </body>
 </html>
