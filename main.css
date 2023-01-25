@@ -1,117 +1,53 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
 }
-
-/* Header */
-
-body > header {
-    background-color: #2f3640;
-    color:antiquewhite;
-    padding: 16px 8px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-header li {
-    display: inline;
-}
-
-header li a {
-    color: antiquewhite;
-    text-decoration: none;
-    margin: 8px;
-}
-
-/* Containers */
 
 .container {
-    width: 1340px;
-    margin: 0 auto;
-    padding: 16px 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container h2 {
-    margin-bottom: 16px;
-    font-size: 32px;
-}
-
-/* Articles */
-
-.articles {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.articles article {
-    width: 30%;
-    margin-bottom: 16px;
-}
-
-.articles article img {
+    margin: 80px auto;
+    max-width: 640px;
     width: 100%;
 }
 
-.articles article h3 {
-    margin: 8px 0;
-    font-size: 24px;
+form {
+    margin-top: 40px;
 }
 
-.articles article a {
-    color: white;
-    background-color: blue;
+input, textarea, button {
+    display: block;
     padding: 8px;
-    margin-top: 8px;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    text-decoration: none;
+    margin-bottom: 8px;
+    width: 100%;
+    resize: none;
+}
+
+button {
+    background-color: #2ecc71;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
     font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    cursor: pointer;
 }
 
-.articles article a:hover {
-    text-decoration: underline;
+button:hover {
+    background-color: #27ae60;
 }
 
-.articles article p {
-    font-family: Arial, Helvetica, sans-serif;
+#mensagem-sucesso {
+    background-color: #27ae60;
+    padding: 16px;
+    color: #fff;
+    display: none;
 }
 
-/* Sections */
-
-#sports {
-    background-color: rgba(0, 255, 0, 0.1);
-}
-
-#sports a {
-    background-color: rgba(0, 255, 0, 0.75);
-}
-
-#economy {
-    background-color: rgba(0, 0, 255, 0.1);
-}
-
-#economy a {
-    background-color: rgba(0, 0, 255, 0.75);
-}
-
-#ent {
-    background-color: rgba(255, 0, 0, 0.1);
-}
-
-#ent a {
-    background-color: rgba(255, 0, 0, 0.75);
-}
-
-#tech {
-    background-color: rgba(255, 158, 13, 0.1);
-}
-
-#tech a {
-    background-color: rgba(255, 158, 13, 0.75);
+#mensagem-erro {
+    background-color: red;
+    padding: 16px;
+    color: #fff;
+    display: none;
 }
