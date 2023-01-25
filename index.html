@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML com JS</title>
+    <title>Formulário</title>
     <link rel="stylesheet" href="./main.css" />
 </head>
 <body>
     <div class="container">
-        <h1>EBAC Banking</h1>
-        <h2>Depósitos</h2>
-        <form id="form-deposito">
-            <input id="nome-beneficiario" type="text" required placeholder="Nome completo do beneficiário" />
-            <input id="numero-conta" type="number" required placeholder="Número da conta" />
-            <input id="valor-deposito" type="number" required placeholder="Valor" />
-            <textarea placeholder="Descrição (opcional)"></textarea>
-            <button type="submit">Depositar</button>
+        <h1>Formulário</h1>
+        <h2>Informe dois valores:</h2>
+        <form id="form-valores">
+            <input id="valor-a" type="number" required placeholder="Valor A" />
+            <input id="valor-b" type="number" required placeholder="Valor B" />
+            <button type="submit">Submeter</button>
         </form>
         <p id="mensagem-sucesso"></p>
         <p id="mensagem-erro"></p>
