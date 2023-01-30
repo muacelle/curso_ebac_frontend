@@ -4,28 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Cadastro</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Sass</title>
+    <link rel="stylesheet" href="build/main.css">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <h2>Formulário de Cadastro</h2>
-                <form>
-                    <label for="nome" class="form-label">Seu nome:</label>
-                    <input type="text" class="form-control" id="nome">
-                    <label for="email" class="form-label">Seu e-mail:</label>
-                    <input type="email" class="form-control" id="email">
-                    <label for="number" class="form-label">Seu número de telefone:</label>
-                    <input type="tel" class="form-control" id="number">
-                    <button type="submit" class="btn btn-primary" style="margin-top: 18px;">Submit</button>
-                </form>
+    <header>
+        <div class="container">
+            <div class="branding">
+                <img src="https://via.placeholder.com/120x70">
             </div>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Produtos</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2>Produtos</h2>
+            <ul class="products">
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180">
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180">
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180">
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+                <li class="product-item">
+                    <img src="https://via.placeholder.com/180x180">
+                    <h4>Nome do produto</h4>
+                    <p>
+                        Descrição do produto, cor, tamanho, textura, etc.
+                    </p>
+                    <a href="#" class="product-button">
+                        Ver detalhes
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 </body>
 </html>
