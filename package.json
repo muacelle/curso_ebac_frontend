@@ -1,5 +1,8 @@
 {
   "devDependencies": {
+    "grunt": "^1.6.1",
+    "grunt-contrib-less": "^3.0.0",
+    "grunt-contrib-uglify": "^5.2.2",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
@@ -7,7 +10,8 @@
     "sass": "^1.57.1"
   },
   "scripts": {
-    "gulp": "gulp",
+    "grunt": "grunt",
+    "build": "grunt build",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
